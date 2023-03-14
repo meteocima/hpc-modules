@@ -1,0 +1,6 @@
+#%Module
+set DIR /home/wrfprod/modules/sw/libpng/libpng-1.6.39
+prepend-path PATH $DIR/bin
+prepend-path LD_LIBRARY_PATH $DIR/lib
+prepend-path PKG_CONFIG_PATH $DIR/lib/pkgconfig
+prepend-path C_INCLUDE_PATH $DIR/include

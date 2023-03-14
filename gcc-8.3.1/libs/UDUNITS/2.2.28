@@ -1,0 +1,8 @@
+#%Module
+module load Expat/2.4.1
+
+set DIR /home/wrfprod/modules/sw/UDUNITS/udunits-2.2.28
+setenv UDUNITS_DIR $DIR
+prepend-path PATH $DIR/bin
+prepend-path LD_LIBRARY_PATH $DIR/lib
+prepend-path C_INCLUDE_PATH $DIR/include

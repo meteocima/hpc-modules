@@ -1,0 +1,9 @@
+#%Module
+module load HDF5/1.12.2
+set NETCDF_DIR /home/wrfprod/modules/sw/netCDF/netcdf-c-4.9.1
+setenv NETCDF $NETCDF_DIR
+prepend-path PATH $NETCDF_DIR/bin
+prepend-path LD_LIBRARY_PATH $NETCDF_DIR/lib
+prepend-path PKG_CONFIG_PATH $NETCDF_DIR/lib/pkgconfig
+prepend-path C_INCLUDE_PATH $NETCDF_DIR/include
+prepend-path --delim " " LDFLAGS "-L$NETCDF_DIR/lib"

@@ -1,0 +1,9 @@
+#%Module
+set DIR /home/wrfprod/modules/sw/JasPer/jasper-2.0.33
+setenv JASPERLIB $DIR/lib64
+setenv JASPERINC $DIR/include
+prepend-path PATH $DIR/bin
+prepend-path LD_LIBRARY_PATH $DIR/lib64
+prepend-path PKG_CONFIG_PATH $DIR/lib64/pkgconfig
+prepend-path C_INCLUDE_PATH $DIR/include
+prepend-path --delim " " LDFLAGS "-L$DIR/lib64"

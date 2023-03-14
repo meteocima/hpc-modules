@@ -1,0 +1,9 @@
+#%Module
+module load HDF5/1.12.2
+set DIR /home/wrfprod/modules/sw/netCDF-Fortran/netcdf-fortran-4.6.0
+setenv NETCDF $DIR
+prepend-path PATH $DIR/bin
+prepend-path LD_LIBRARY_PATH $DIR/lib
+prepend-path PKG_CONFIG_PATH $DIR/lib/pkgconfig
+prepend-path C_INCLUDE_PATH $DIR/include
+prepend-path --delim " " LDFLAGS "-L$DIR/lib"

@@ -1,0 +1,7 @@
+#%Module
+set DIR /home/wrfprod/modules/sw/HDF5/hdf5-hdf5-1_12_2
+setenv HDF5 $DIR
+prepend-path PATH $DIR/bin
+prepend-path LD_LIBRARY_PATH $DIR/lib
+prepend-path C_INCLUDE_PATH $DIR/include
+prepend-path --delim " " LDFLAGS "-L$DIR/lib"
