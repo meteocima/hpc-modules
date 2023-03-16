@@ -1,4 +1,6 @@
 #%Module
+set SRC_URL https://downloads.unidata.ucar.edu/udunits/2.2.28/udunits-2.2.28.tar.gz
+
 module load Expat/2.4.1
 
 set DIR /home/wrfprod/modules/sw/UDUNITS/udunits-2.2.28

@@ -1,4 +1,14 @@
 #%Module
+
+module-whatis "Unidata network Common Data Form (netCDF) Fortran+C libraries"
+module-whatis "
+Fortran and C libraries compiled in a single modules 
+because often applications give for grant they live 
+in the same directory.
+"
+
+set SRC_URL https://github.com/Unidata/netcdf-fortran/archive/refs/tags/v4.6.0.tar.gz
+
 module load HDF5/1.12.2
 set DIR /home/wrfprod/modules/sw/netCDF-Fortran/netcdf-fortran-4.6.0
 setenv NETCDF $DIR
