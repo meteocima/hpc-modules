@@ -2,8 +2,8 @@
 module load WPS/4.1-smooth-omp
 module load WRF/4.1.5-cima-omp
 module load WRFDA/4.1.5-cima-omp
-module load CDO/1.7.2
-module load NCO/5.1.3
-module load UPP/3.2
+#module load CDO/1.7.2
+#module load NCO/5.1.3
+#module load UPP/3.2
 prepend-path PKG_CONFIG_PATH $::env(NETCDF)/lib/pkgconfig
 

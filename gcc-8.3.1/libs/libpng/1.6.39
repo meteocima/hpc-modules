@@ -1,6 +1,6 @@
 #%Module
 set SRC_URL https://github.com/glennrp/libpng/archive/refs/tags/v1.6.39.tar.gz
-set DIR /home/wrfprod/modules/sw/libpng/libpng-1.6.39
+set DIR ~/modules/sw/libpng/libpng-1.6.39
 setenv PNG_DIR $DIR
 prepend-path PATH $DIR/bin
 prepend-path LD_LIBRARY_PATH $DIR/lib

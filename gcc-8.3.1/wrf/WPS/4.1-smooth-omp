@@ -7,4 +7,4 @@ module load aocl-2.2-5_gcc
 #module load JasPer/4.0.0
 #module load libpng/1.6.39
 
-setenv WPS_DIR /home/wrfprod/modules/sw/WPS/WPS-4.1-smooth-omp
+setenv WPS_DIR ~/modules/sw/WPS/WPS-4.1-smooth-omp
