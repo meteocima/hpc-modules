@@ -4,7 +4,7 @@ module-whatis "Unidata network Common Data Form (netCDF) C libraries"
 set SRC_URL https://github.com/Unidata/netcdf-c/archive/refs/tags/v4.9.1.tar.gz
 
 module load HDF5/1.12.2
-set NETCDF_DIR /home/wrfprod/modules/sw/netCDF/netcdf-c-4.9.1
+set NETCDF_DIR ~/modules/sw/netCDF/netcdf-c-4.9.1
 setenv NETCDF $NETCDF_DIR
 prepend-path PATH $NETCDF_DIR/bin
 prepend-path LD_LIBRARY_PATH $NETCDF_DIR/lib

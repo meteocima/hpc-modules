@@ -1,5 +1,5 @@
 #%Module
-set DIR /home/wrfprod/modules/sw/JasPer/jasper-4.0.0
+set DIR ~/modules/sw/JasPer/jasper-4.0.0
 setenv JASPERLIB $DIR/lib64
 setenv JASPERINC $DIR/include
 prepend-path PATH $DIR/bin

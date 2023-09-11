@@ -1,6 +1,6 @@
 #%Module
 set SRC_URL https://github.com/jasper-software/jasper/releases/download/version-2.0.33/jasper-2.0.33.tar.gz
-set DIR /home/wrfprod/modules/sw/JasPer/jasper-2.0.33
+set DIR ~/modules/sw/JasPer/jasper-2.0.33
 setenv JASPERLIB $DIR/lib64
 setenv JASPERINC $DIR/include
 prepend-path PATH $DIR/bin
