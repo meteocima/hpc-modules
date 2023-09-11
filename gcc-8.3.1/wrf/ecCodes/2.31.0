@@ -1,0 +1,14 @@
+#%Module
+
+set SRC_URL https://confluence.ecmwf.int/download/attachments/45757960/eccodes-2.31.0-Source.tar.gz?api=v2
+set DIR /home/wrfprod/modules/sw/ecCodes/eccodes-2.31.0
+
+module load libpng/1.6.39
+module load JasPer/2.0.33
+module load gcc-8.3.1/WRF-KIT2
+
+setenv UNIPOST_HOME /home/wrfprod/modules/sw/UPP/UPPV4.1/src
+prepend-path PATH $DIR/bin
+prepend-path LD_LIBRARY_PATH $DIR/lib64
+prepend-path PKG_CONFIG_PATH $DIR/lib64/pkgconfig
+prepend-path C_INCLUDE_PATH $DIR/include
