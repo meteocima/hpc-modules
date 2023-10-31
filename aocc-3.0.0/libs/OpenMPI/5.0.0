@@ -1,0 +1,8 @@
+#%Module
+set DIR /home/wrfprod/modules/sw/aocc-3.0.0/OpenMPI/openmpi-5.0.0
+setenv OpenMPI_DIR $DIR
+prepend-path PATH $DIR/bin
+prepend-path LD_LIBRARY_PATH $DIR/lib
+prepend-path PKG_CONFIG_PATH $DIR/lib/pkgconfig
+prepend-path C_INCLUDE_PATH $DIR/include
+prepend-path --delim " " LDFLAGS "-L$DIR/lib"

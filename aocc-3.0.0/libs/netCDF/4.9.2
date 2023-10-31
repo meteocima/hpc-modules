@@ -1,0 +1,11 @@
+#%Module
+
+module-whatis "Unidata network Common Data Form (netCDF) C libraries"
+
+set NETCDF_DIR ~/modules/sw/aocc-3.0.0/netCDF/netcdf-4.9.2
+setenv NETCDF $NETCDF_DIR
+prepend-path PATH $NETCDF_DIR/bin
+prepend-path LD_LIBRARY_PATH $NETCDF_DIR/lib
+prepend-path PKG_CONFIG_PATH $NETCDF_DIR/lib/pkgconfig
+prepend-path C_INCLUDE_PATH $NETCDF_DIR/include
+prepend-path --delim " " LDFLAGS "-L$NETCDF_DIR/lib"

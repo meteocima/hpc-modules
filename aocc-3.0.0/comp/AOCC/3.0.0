@@ -1,0 +1,13 @@
+#%Module
+prepend-path PATH /opt/share/comps/aocc-compiler-3.0.0/bin
+prepend-path LIBRARY_PATH /opt/share/comps/aocc-compiler-3.0.0/lib
+prepend-path LIBRARY_PATH /opt/share/comps/aocc-compiler-3.0.0/lib32
+prepend-path LD_LIBRARY_PATH /opt/share/comps/aocc-compiler-3.0.0/ompd
+prepend-path LD_LIBRARY_PATH /opt/share/comps/aocc-compiler-3.0.0/lib
+prepend-path LD_LIBRARY_PATH /opt/share/comps/aocc-compiler-3.0.0/lib32
+append-path C_INCLUDE_PATH /opt/share/comps/aocc-compiler-3.0.0/include
+append-path CPLUS_INCLUDE_PATH /opt/share/comps/aocc-compiler-3.0.0/include
+setenv CC clang
+setenv CXX clang++
+setenv FC flang
+setenv F77 flang
