@@ -1,0 +1,12 @@
+#%Module
+module load libevent/2.1.12
+module load hwloc/2.9.3
+
+module-whatis "Reference Implementation of the Process Management Interface Exascale (PMIx) standard"
+set SRC_URL https://github.com/openpmix/openpmix/releases/download/v5.0.2/pmix-5.0.2.tar.gz
+set DIR /data/safe/home/wrfprod/modules/sw/pmix/pmix-5.0.2
+setenv PMIX_BASE $DIR
+prepend-path PATH $DIR/bin
+prepend-path LD_LIBRARY_PATH $DIR/lib
+prepend-path C_INCLUDE_PATH $DIR/include
+prepend-path --delim " " LDFLAGS "-L$DIR/lib"

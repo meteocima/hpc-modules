@@ -1,0 +1,10 @@
+#%Module
+module load ucx/1.15.0
+module-whatis "Open Fabrics Interfaces"
+set SRC_URL  https://github.com/ofiwg/libfabric/releases/download/v1.21.0/libfabric-1.21.0.tar.bz2
+set DIR /data/safe/home/wrfprod/modules/sw/libfabric/libfabric-1.21.0
+setenv LIBFABRIC_BASE $DIR
+prepend-path PATH $DIR/bin
+prepend-path LD_LIBRARY_PATH $DIR/lib
+prepend-path C_INCLUDE_PATH $DIR/include
+prepend-path --delim " " LDFLAGS "-L$DIR/lib"

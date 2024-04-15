@@ -1,0 +1,10 @@
+#%Module
+
+module-whatis "Unified Communication X"
+set SRC_URL  https://github.com/openucx/ucx/releases/download/v1.15.0/ucx-1.15.0.tar.gz
+set DIR /data/safe/home/wrfprod/modules/sw/ucx/ucx-1.15.0
+setenv UCX_BASE $DIR
+prepend-path PATH $DIR/bin
+prepend-path LD_LIBRARY_PATH $DIR/lib
+prepend-path C_INCLUDE_PATH $DIR/include
+prepend-path --delim " " LDFLAGS "-L$DIR/lib"

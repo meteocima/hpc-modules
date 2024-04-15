@@ -1,0 +1,10 @@
+#%Module
+
+module-whatis "Event notification library"
+set SRC_URL  https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
+set DIR /data/safe/home/wrfprod/modules/sw/libevent/libevent-2.1.12
+setenv LIBEVENT_BASE $DIR
+prepend-path PATH $DIR/bin
+prepend-path LD_LIBRARY_PATH $DIR/lib
+prepend-path C_INCLUDE_PATH $DIR/include
+prepend-path --delim " " LDFLAGS "-L$DIR/lib"

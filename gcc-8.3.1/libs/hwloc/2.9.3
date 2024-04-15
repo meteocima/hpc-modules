@@ -1,0 +1,10 @@
+#%Module
+
+module-whatis "Portable abstraction of parallel architectures for high-performance computing"
+set SRC_URL https://download.open-mpi.org/release/hwloc/v2.9/hwloc-2.9.3.tar.gz
+set DIR /data/safe/home/wrfprod/modules/sw/hwloc/hwloc-2.9.3
+setenv HWLOC_BASE $DIR
+prepend-path PATH $DIR/bin
+prepend-path LD_LIBRARY_PATH $DIR/lib
+prepend-path C_INCLUDE_PATH $DIR/include
+prepend-path --delim " " LDFLAGS "-L$DIR/lib"

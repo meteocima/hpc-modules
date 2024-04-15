@@ -1,0 +1,13 @@
+#%Module
+module load libevent/2.1.12
+module load hwloc/2.9.3
+module load pmix/5.0.2
+
+module-whatis "PMIx Reference RunTime Environment"
+set SRC_URL https://github.com/openpmix/prrte/releases/download/v3.0.5/prrte-3.0.5.tar.gz
+set DIR /data/safe/home/wrfprod/modules/sw/prrte/prrte-3.0.5
+setenv PRRTE_BASE $DIR
+prepend-path PATH $DIR/bin
+prepend-path LD_LIBRARY_PATH $DIR/lib
+prepend-path C_INCLUDE_PATH $DIR/include
+prepend-path --delim " " LDFLAGS "-L$DIR/lib"
